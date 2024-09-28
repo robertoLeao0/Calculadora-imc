@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.pagina-principal {
+    width: 100vw;
+    height: 100vh;
+    background-color: #948570;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.conteudo-site {
+    width: 400px;
+    height: 600px;
+    background: rgba(22, 21, 21, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textosite {
+    color: aquamarine;
+    font-size: 30px;
+}
+
+#inputAltura,
+#inputPeso {
+    width: 230px;
+    height: 40px;
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 8px;
+}
+
+
+#btn-calcular {
+    width: 250px;
+    height: 45px;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    color: aquamarine;
+    background-color: rgba(95, 95, 95, 0.952);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+#btn-calcular:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+
+#erroPeso,
+#erroAltura {
+    color: rgb(121, 119, 119);
+    margin-bottom: 10px;
+}
+
+
+
+#resultado {
+    color: rgb(89, 148, 128);
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+}
+
+#numerosImc {
+    font-size: 25px;
+    color: rgb(89, 148, 128);
+}
+
+#btnLimpar {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 90px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10%;
+    color: rgb(89, 148, 128);
+}
+
+#btnLimpar:hover {
+    background-color: rgba(59, 59, 59, 0.952);
+
+}
+
+
+
+@media (max-width: 400px) {
+    .conteudo-site {
+        width: 280px;
+        height: 400px;
+    }
+
+    #inputAltura,
+    #inputPeso {
+        width: 150px;
+        height: 25px;
+        font-size: 16px;
+    }
+
+    #btn-calcular {
+        width: 170px;
+        height: 35px;
+        font-size: 19px;
+    }
+
+    .textosite {
+        color: aquamarine;
+        font-size: 20px;
+    }
+
+    #erroPeso,
+    #erroAltura {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    #btnLimpar {
+        margin-top: 12px;
+        width: 80px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #resultado {
+        font-size: 15px;
+    }
+
+    #numerosImc {
+        font-size: 22px;
+    }
+
+}
